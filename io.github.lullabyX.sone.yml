@@ -26,10 +26,11 @@ finish-args:
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=xdg-run/app/com.discordapp.DiscordCanary:create
   - --filesystem=xdg-run/app/dev.vencord.Vesktop:create
-  - --filesystem=xdg-run/.flatpak/com.discordapp.Discord/xdg-run:ro
-  - --filesystem=xdg-run/.flatpak/dev.vencord.Vesktop/xdg-run:ro
-  - --filesystem=xdg-run/snap.discord:ro
-  - --filesystem=xdg-run/snap.discord-canary:ro
+  - --filesystem=xdg-run/.flatpak/com.discordapp.Discord/xdg-run:create
+  - --filesystem=xdg-run/.flatpak/com.discordapp.DiscordCanary/xdg-run:create
+  - --filesystem=xdg-run/.flatpak/dev.vencord.Vesktop/xdg-run:create
+  - --filesystem=xdg-run/snap.discord:create
+  - --filesystem=xdg-run/snap.discord-canary:create
   - --talk-name=org.kde.StatusNotifierWatcher
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
 build-options:
